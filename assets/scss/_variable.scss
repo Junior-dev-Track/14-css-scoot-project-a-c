@@ -65,4 +65,6 @@ p{
 
 .container {
     max-width: 1430px;
+    display: flex;
+    flex-direction: column;
 }
