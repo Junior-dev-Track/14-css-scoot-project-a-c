@@ -1,10 +1,12 @@
 @use './variable.scss';
 
 footer {
-
     .footer-up {
         background-color: variable.$color-dark-navy;
+        position: relative;
+        overflow: hidden;
         .container {
+            overflow-y: hidden;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             align-items: center;
@@ -22,10 +24,21 @@ footer {
                 gap: 18px;
             }
         }
+        .container::after {
+            content: '';
+            width: 1200px;
+            height: 347px;
+            background: url('./assets/icons/circles.svg') no-repeat;
+            background-size: 100% 100%;
+            position: absolute; 
+            top: 130px;
+            left: 470px;
+        }
     }
 
     .footer-down {
         background-color: variable.$color-footer;
+        overflow-x: hidden;
         .container {
             display: flex;
             flex-direction: row;

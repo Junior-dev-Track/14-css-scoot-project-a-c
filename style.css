@@ -105,7 +105,7 @@ p {
 }
 
 .container {
-  max-width: 1430px;
+  max-width: 1106px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -142,8 +142,11 @@ header .header-left nav ul a {
 
 footer .footer-up {
   background-color: #495567;
+  position: relative;
+  overflow: hidden;
 }
 footer .footer-up .container {
+  overflow-y: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -160,8 +163,19 @@ footer .footer-up .container .footer-up-right {
   justify-self: right;
   gap: 18px;
 }
+footer .footer-up .container::after {
+  content: "";
+  width: 1200px;
+  height: 347px;
+  background: url("./assets/icons/circles.svg") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 130px;
+  left: 470px;
+}
 footer .footer-down {
   background-color: #333A44;
+  overflow-x: hidden;
 }
 footer .footer-down .container {
   display: flex;
