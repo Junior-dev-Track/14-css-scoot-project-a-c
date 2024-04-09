@@ -97,4 +97,8 @@ p {
 .button {
   color: #FFFFFF;
   background-color: #fcb62b;
+}
+
+.container {
+  max-width: 1430px;
 }/*# sourceMappingURL=style.css.map */
