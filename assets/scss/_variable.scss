@@ -61,10 +61,16 @@ p{
 .button{
     color: $button-color;
     background-color: $color-yellow;
+    font-family: $family-space;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 700;
+    padding: 14px 39px;
 }
 
 .container {
     max-width: 1430px;
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
