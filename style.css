@@ -125,6 +125,10 @@ header .header-left {
   align-items: center;
   gap: 60px;
 }
+header .header-left img {
+  width: 100%;
+  height: 100%;
+}
 header .header-left nav ul {
   display: flex;
   flex-direction: row;
@@ -134,4 +138,62 @@ header .header-left nav ul a {
   font-family: "Space Mono", monospace;
   color: #939CAA;
   font-size: 15px;
+}
+
+footer .footer-up {
+  background-color: #495567;
+}
+footer .footer-up .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  height: 300px;
+}
+footer .footer-up .container .footer-up-left {
+  justify-self: left;
+}
+footer .footer-up .container .footer-up-left h2 {
+  color: #FFFFFF;
+  width: 415px;
+}
+footer .footer-up .container .footer-up-right {
+  justify-self: right;
+  gap: 18px;
+}
+footer .footer-down {
+  background-color: #333A44;
+}
+footer .footer-down .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 96px;
+  align-items: center;
+}
+footer .footer-down .container .footer-down-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px;
+}
+footer .footer-down .container .footer-down-left nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+footer .footer-down .container .footer-down-left nav ul a {
+  font-family: "Space Mono", monospace;
+  color: #939CAA;
+  font-size: 15px;
+}
+footer .footer-down .container .footer-down-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+footer .footer-down .container .footer-down-right img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

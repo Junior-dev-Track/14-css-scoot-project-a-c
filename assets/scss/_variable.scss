@@ -14,7 +14,8 @@ $color-dim-gray: #939CAA;
 $color-light-grey: #E5ECF4;
 $color-snow: #F2F5F9;
 $color-light-yellow: #FFF4DF;
-$button-color: #FFFFFF;
+$color-footer: #333A44;
+$color-white: #FFFFFF;
 
 
 
@@ -59,7 +60,7 @@ p{
 }
 
 .button{
-    color: $button-color;
+    color: $color-white;
     background-color: $color-yellow;
     font-family: $family-space;
     font-size: 15px;
