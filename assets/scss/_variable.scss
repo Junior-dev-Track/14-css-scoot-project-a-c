@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+/* Fonts */
+$family-space: "Space Mono", monospace;
+$family-lexend: "Lexend Deca", sans-serif;
+
+
+/* Colors */
+$color-yellow: #fcb62b;
+$color-dark-navy: #495567;
+$color-dim-gray: #939CAA;
+$color-light-grey: #E5ECF4;
+$color-snow: #F2F5F9;
+$color-light-yellow: #FFF4DF;
+$button-color: #FFFFFF;
+
+
+
+/* Spacing */
+h1{
+    font-family: $family-space;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+}
+
+h2{
+    font-family: $family-space;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2.142857074737549px;
+}
+
+h3{
+    font-family: $family-space;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.7857142686843872px;
+}
+
+h4{
+    font-family: $family-space;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.0714285373687744px;
+}
+
+p{
+    font-family: $family-lexend;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.button{
+    color: $button-color;
+    background-color: $color-yellow;
+}
