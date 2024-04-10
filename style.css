@@ -457,6 +457,7 @@ body {
   color: #495567;
 }
 .maps__info .button {
+  height: -moz-fit-content;
   height: fit-content;
   padding: 15px 45px;
 }
@@ -466,6 +467,7 @@ body {
   align-items: center;
   color: #495567;
   position: absolute;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .maps .forme .rectangle {
@@ -504,4 +506,79 @@ body {
 
 .main__grid {
   display: flex;
+}
+
+.second-section-container {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 70px;
+}
+
+.join {
+  position: relative;
+  text-align: center;
+}
+.join h2 {
+  margin-bottom: 98px;
+}
+.join img {
+  border-radius: 100%;
+}
+.join .para {
+  background-color: #fcb62b;
+  border-radius: 100%;
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 171px;
+}
+.join .para__1 {
+  left: 145px;
+}
+.join .para__2 {
+  left: 515px;
+}
+.join .para__3 {
+  left: 875px;
+}
+.join .para p {
+  font-family: "Space Mono", monospace;
+  color: #495567;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.0714285374px;
+}
+.join .flex_join {
+  display: flex;
+}
+.join .flex_join .para--last {
+  margin-top: 20px;
+}
+.join .h4-join {
+  margin-top: 100px;
+}
+
+.space-section {
+  margin: 55px 0px;
+}
+
+.grid__apply {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 105px;
+}
+.grid__apply .box {
+  display: flex;
+  background-color: #F2F5F9;
+  justify-content: space-between;
+  padding: 38px;
+  gap: 24px;
+}
+.grid__apply .button {
+  padding: 14px 66px;
 }/*# sourceMappingURL=style.css.map */
