@@ -10,16 +10,25 @@
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    display: grid;
+    
+    align-items: center;
 
-    .container{
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0 auto;
-        h1{
-            width: 50%;
-        }
+    .container__intro{
+        display: grid;
+        grid-template-columns: 1.7fr 0.3fr;
+        margin: auto;
+        width: 1106px;
         img{
-            height: fit-content;
+            position: absolute;
+            right: 0
+        }
+
+        &before{
+            content: "";
+            opacity: 75%;
+            background-color: rgba(0, 0, 0, 0.5);
         }
     }
     

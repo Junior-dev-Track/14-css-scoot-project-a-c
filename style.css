@@ -215,7 +215,7 @@ footer .footer-down .container .footer-down-right img {
 .intro {
   height: 650px;
   margin-bottom: 160px;
-  background-image: url("../assets/images/home/header-moto.png");
+  background-image: url("./assets/images/home/header-moto.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -294,7 +294,6 @@ footer .footer-down .container .footer-down-right img {
 }
 .second-section-container .second-section-child p {
   color: #939CAA;
-
   margin: 24px 0 40px 0;
 }
 .second-section-container .second-section-child img {
@@ -313,4 +312,31 @@ footer .footer-down .container .footer-down-right img {
   display: inline-flex;
   flex-direction: column;
   justify-self: flex-end;
+}
+
+.picture__section {
+  background-image: url("./assets/images/carrefour.png");
+  background-position-y: 96%;
+  color: #FFFFFF;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+.picture__section .container__intro {
+  display: grid;
+  grid-template-columns: 1.7fr 0.3fr;
+  margin: auto;
+  width: 1106px;
+}
+.picture__section .container__intro img {
+  position: absolute;
+  right: 0;
+}
+.picture__section .container__introbefore {
+  content: "";
+  opacity: 75%;
+  background-color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=style.css.map */
