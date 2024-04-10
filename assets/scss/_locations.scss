@@ -1,0 +1,27 @@
+@use "../scss/reset.scss";
+@use "../scss/variable.scss";
+@use "../scss/footer.scss";
+@use "../scss/header.scss";
+
+.picture__section{
+    background-image: url("./assets/images/carrefour.png");
+    background-position-y: 96%;
+    color: variable.$color-white;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        h1{
+            width: 50%;
+        }
+        img{
+            height: fit-content;
+        }
+    }
+    
+}
+
