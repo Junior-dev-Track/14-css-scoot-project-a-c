@@ -1,0 +1,60 @@
+@use './variable.scss';
+
+.second-section-container {
+    grid-template-rows: 1fr 1fr;
+    margin: 120px 0;
+    .second-section-child {
+        &:nth-child(2)::after {
+            content: '';
+            width: 1100px;
+            height: 150px;
+            background: url('./assets/icons/arrow-up-left.svg')  no-repeat;
+            position: absolute;
+            top: 273px;
+            left: -124px;
+        }
+    }
+}
+
+.FAQs {
+    margin-bottom: 160px;
+    .FAQs-title {
+        margin-bottom: 64px;
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .FAQs-container {
+        display: grid;
+        grid-template-columns: 1fr 730px;
+        grid-template-rows: auto auto;
+        column-gap: 30px;
+        row-gap: 64px;
+        .FAQs-child {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            .FAQs-question {
+                background-color: variable.$color-snow;
+                padding: 32px 40px;
+                p {
+                    margin-top: 24px;
+                }
+                h4 {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        width: 20px;
+                        height: 20px;
+                        background: url('./assets/icons/faq-closed.svg') no-repeat;
+                        position: absolute; 
+                        top: 10px;
+                        right: 0px;
+                    }
+                }
+
+            }
+        }
+    }
+}
