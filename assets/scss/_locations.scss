@@ -6,7 +6,6 @@
 .picture__section{
     background-image: url("./assets/images/carrefour.png");
     background-position-y: 96%;
-    color: variable.$color-white;
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,6 +19,10 @@
         grid-template-columns: 1.7fr 0.3fr;
         margin: auto;
         width: 1106px;
+
+        h1{
+            color: variable.$color-white;
+        }
 
         img{
             position: absolute;

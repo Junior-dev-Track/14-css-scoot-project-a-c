@@ -61,6 +61,7 @@ h1 {
   font-weight: 700;
   line-height: 56px;
   letter-spacing: -2.5px;
+  color: #495567;
 }
 
 h2 {
@@ -69,6 +70,7 @@ h2 {
   font-weight: 700;
   line-height: 48px;
   letter-spacing: -2.1428570747px;
+  color: #495567;
 }
 
 h3 {
@@ -77,6 +79,7 @@ h3 {
   font-weight: 700;
   line-height: 48px;
   letter-spacing: -1.7857142687px;
+  color: #495567;
 }
 
 h4 {
@@ -85,6 +88,7 @@ h4 {
   font-weight: 700;
   line-height: 28px;
   letter-spacing: -1.0714285374px;
+  color: #495567;
 }
 
 p {
@@ -337,7 +341,6 @@ footer .footer-down .container .footer-down-right img {
 .picture__section {
   background-image: url("./assets/images/carrefour.png");
   background-position-y: 96%;
-  color: #FFFFFF;
   height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -351,6 +354,9 @@ footer .footer-down .container .footer-down-right img {
   grid-template-columns: 1.7fr 0.3fr;
   margin: auto;
   width: 1106px;
+}
+.picture__section .container__intro h1 {
+  color: #FFFFFF;
 }
 .picture__section .container__intro img {
   position: absolute;
