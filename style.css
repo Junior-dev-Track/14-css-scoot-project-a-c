@@ -89,7 +89,7 @@ h4 {
 
 p {
   font-family: "Lexend Deca", sans-serif;
-  font-size: 15 px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 25px;
 }
@@ -214,15 +214,19 @@ footer .footer-down .container .footer-down-right img {
 
 .intro {
   height: 650px;
-  background-image: url("./assets/images/home/header-moto.png");
+  margin-bottom: 160px;
+  background-image: url("../assets/images/home/header-moto.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  z-index: 1;
 }
 .intro .container {
   padding: 153px 0;
 }
 .intro .container .content-h1 {
   width: 50%;
+  margin-bottom: 40px;
 }
 .intro .container .content-h1 h1 {
   color: #FFFFFF;
@@ -231,40 +235,75 @@ footer .footer-down .container .footer-down-right img {
   width: 40%;
   display: flex;
   flex-direction: column;
-  justify-self: flex-start;
+  align-items: flex-start;
+  padding-left: 10%;
 }
 .intro .container .content-p p {
   color: #FFFFFF;
   margin-bottom: 40px;
 }
 
+.intro::before {
+  content: "";
+  background-color: #2F3B59;
+  opacity: 75%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 650px;
+  z-index: -1;
+}
+
 .first-section-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+  margin-bottom: 200px;
 }
-.first-section-container p {
+.first-section-container .first-section-child img {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 40px;
+}
+.first-section-container .first-section-child p {
   color: #939CAA;
-  margin: 40px 0 30px 0;
+  margin-top: 36px;
 }
 
-.picture__section {
-  background-image: url("./assets/images/carrefour.png");
-  background-position-y: 96%;
-  color: #FFFFFF;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-size: cover;
+.second-section-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 160px;
+  align-items: center;
+  margin-bottom: 200px;
 }
-.picture__section .container {
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
+.second-section-container .second-section-child {
+  width: 80%;
 }
-.picture__section .container h1 {
-  width: 50%;
+.second-section-container .second-section-child h2 {
+  color: #495567;
 }
-.picture__section .container img {
-  height: -moz-fit-content;
-  height: fit-content;
+.second-section-container .second-section-child p {
+  color: #939CAA;
+
+  margin: 24px 0 40px 0;
+}
+.second-section-container .second-section-child img {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+}
+.second-section-container .right-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: flex-end;
+}
+.second-section-container .circle-img-right {
+  display: inline-flex;
+  flex-direction: column;
+  justify-self: flex-end;
 }/*# sourceMappingURL=style.css.map */
