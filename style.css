@@ -500,4 +500,8 @@ body {
 .jakarta {
   bottom: 207px;
   right: 134px;
+}
+
+.main__grid {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
