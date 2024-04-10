@@ -255,16 +255,22 @@ footer .footer-down .container .footer-down-right img {
   height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  display: grid;
+  align-items: center;
 }
-.picture__section .container {
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
+.picture__section .container__intro {
+  display: grid;
+  grid-template-columns: 1.7fr 0.3fr;
+  margin: auto;
+  width: 1106px;
 }
-.picture__section .container h1 {
-  width: 50%;
+.picture__section .container__intro img {
+  position: absolute;
+  right: 0;
 }
-.picture__section .container img {
-  height: -moz-fit-content;
-  height: fit-content;
+.picture__section .container__introbefore {
+  content: "";
+  opacity: 75%;
+  background-color: rgba(0, 0, 0, 0.5);
 }/*# sourceMappingURL=style.css.map */
