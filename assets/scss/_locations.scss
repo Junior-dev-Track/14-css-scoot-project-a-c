@@ -12,8 +12,8 @@
     background-size: cover;
     position: relative;
     display: grid;
-    
     align-items: center;
+    z-index: 1;
 
     .container__intro{
         display: grid;
@@ -24,13 +24,39 @@
             position: absolute;
             right: 0
         }
+    }
 
-        &before{
-            content: "";
-            opacity: 75%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
+    &::before{
+        content: '';
+        background-color: #2F3B59;
+        opacity: 75%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: inherit;
+        z-index: -1;
     }
     
+}
+
+.maps {
+    margin: 100px 0;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    &__info{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        margin: 100px 0;
+
+        h2{
+            color: variable.$color-dark-navy
+        }
+    }
 }
 
