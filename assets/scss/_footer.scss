@@ -1,0 +1,83 @@
+@use './variable.scss';
+
+footer {
+    .footer-up {
+        background-color: variable.$color-dark-navy;
+        position: relative;
+        overflow: hidden;
+        .container {
+            overflow-y: hidden;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            height: 300px;
+            .footer-up-left {
+                justify-self: left;
+                h2 {
+                    color: variable.$color-white;
+                    width: 415px;
+                }
+            }
+    
+            .footer-up-right {
+                justify-self: right;
+                gap: 18px;
+            }
+        }
+        .container::after {
+            content: '';
+            width: 1200px;
+            height: 347px;
+            background: url('./assets/icons/circles.svg') no-repeat;
+            background-size: 100% 100%;
+            position: absolute; 
+            top: 130px;
+            left: 470px;
+        }
+    }
+
+    .footer-down {
+        background-color: variable.$color-footer;
+        overflow-x: hidden;
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: 96px;
+            align-items: center;
+    
+            .footer-down-left {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 60px;
+                
+                nav {
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 32px;
+                        a {
+                            font-family: variable.$family-space;
+                            color: variable.$color-dim-gray;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+    
+            .footer-down-right {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 24px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        
+    }
+}
