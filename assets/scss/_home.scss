@@ -6,11 +6,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     .container {
-        .content {
+        padding: 153px 0;
+        .content-h1 {
             width: 50%;
-            padding: 153px 0;
-            h1, 
-            p{
+            h1 {
+                color: variable.$color-white;
+            }
+        }
+        .content-p {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: flex-end;
+            p {
                 color: variable.$color-white;
                 margin-bottom: 40px;
             }
