@@ -246,4 +246,25 @@ footer .footer-down .container .footer-down-right img {
 .first-section-container p {
   color: #939CAA;
   margin: 40px 0 30px 0;
+}
+
+.picture__section {
+  background-image: url("./assets/images/carrefour.png");
+  background-position-y: 96%;
+  color: #FFFFFF;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.picture__section .container {
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.picture__section .container h1 {
+  width: 50%;
+}
+.picture__section .container img {
+  height: -moz-fit-content;
+  height: fit-content;
 }/*# sourceMappingURL=style.css.map */
