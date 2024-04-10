@@ -1,0 +1,8 @@
+@use "../scss/reset.scss";
+@use "../scss/variable.scss";
+
+.picture__section{
+    background-image: url("../images/test.png");
+    color: #FFFFFF;
+    height: 200px;
+}
