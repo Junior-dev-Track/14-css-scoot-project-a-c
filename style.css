@@ -16,7 +16,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 62.5%;
+  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
   text-decoration: none;
@@ -92,6 +92,7 @@ p {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
+  color: #939CAA;
 }
 
 .button {
@@ -317,6 +318,7 @@ footer .footer-down .container .footer-down-right img {
   position: relative;
   display: grid;
   align-items: center;
+  z-index: 1;
 }
 .picture__section .container__intro {
   display: grid;
@@ -328,8 +330,31 @@ footer .footer-down .container .footer-down-right img {
   position: absolute;
   right: 0;
 }
-.picture__section .container__introbefore {
+.picture__section::before {
   content: "";
+  background-color: #2F3B59;
   opacity: 75%;
-  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  z-index: -1;
+}
+
+.maps {
+  margin: 100px 0;
+}
+.maps img {
+  width: 100%;
+  height: auto;
+}
+.maps__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  margin: 100px 0;
+}
+.maps__info h2 {
+  color: #495567;
 }/*# sourceMappingURL=style.css.map */
