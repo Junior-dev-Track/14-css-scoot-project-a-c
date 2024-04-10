@@ -50,12 +50,18 @@
 
     &__info{
         display: grid;
+        justify-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 50px;
         margin: 100px 0;
 
         h2{
             color: variable.$color-dark-navy
+        }
+
+        .button{
+            height: fit-content;
+            padding: 15px 45px;
         }
     }
 }

@@ -351,10 +351,16 @@ footer .footer-down .container .footer-down-right img {
 }
 .maps__info {
   display: grid;
+  justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
   margin: 100px 0;
 }
 .maps__info h2 {
   color: #495567;
+}
+.maps__info .button {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px 45px;
 }/*# sourceMappingURL=style.css.map */
