@@ -1,0 +1,39 @@
+@use './variable.scss';
+
+.intro {
+    height: 650px;
+    background-image: url('./assets/images/home/header-moto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        padding: 153px 0;
+        .content-h1 {
+            width: 50%;
+            h1 {
+                color: variable.$color-white;
+            }
+        }
+        .content-p {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: flex-end;
+            justify-self: flex-start;
+            p {
+                color: variable.$color-white;
+                margin-bottom: 40px;
+                
+            }
+        }
+    }
+}
+
+.first-section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    p {
+        color: variable.$color-dim-gray;
+        margin: 40px 0 30px 0;
+    }
+}
