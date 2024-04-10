@@ -61,6 +61,7 @@ h1 {
   font-weight: 700;
   line-height: 56px;
   letter-spacing: -2.5px;
+  color: #495567;
 }
 
 h2 {
@@ -69,6 +70,7 @@ h2 {
   font-weight: 700;
   line-height: 48px;
   letter-spacing: -2.1428570747px;
+  color: #495567;
 }
 
 h3 {
@@ -77,6 +79,7 @@ h3 {
   font-weight: 700;
   line-height: 48px;
   letter-spacing: -1.7857142687px;
+  color: #495567;
 }
 
 h4 {
@@ -85,6 +88,7 @@ h4 {
   font-weight: 700;
   line-height: 28px;
   letter-spacing: -1.0714285374px;
+  color: #495567;
 }
 
 p {
@@ -246,9 +250,9 @@ footer .footer-down .container .footer-down-right img {
 }
 .intro .container .content-p::after {
   content: "";
-  width: 100%;
-  height: 100%;
-  background: url("./assets/icons/arrow-down-right.svg") no-repeat;
+  width: 1000px;
+  height: 150px;
+  background: url("./assets/icons/arrow-down-right-small.svg") no-repeat;
   position: absolute;
   top: 50px;
   left: 540px;
@@ -398,7 +402,6 @@ body {
 .picture__section {
   background-image: url("./assets/images/carrefour.png");
   background-position-y: 96%;
-  color: #FFFFFF;
   height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -412,6 +415,9 @@ body {
   grid-template-columns: 1.7fr 0.3fr;
   margin: auto;
   width: 1106px;
+}
+.picture__section .container__intro h1 {
+  color: #FFFFFF;
 }
 .picture__section .container__intro img {
   position: absolute;
@@ -431,6 +437,7 @@ body {
 
 .maps {
   margin: 100px 0;
+  position: relative;
 }
 .maps img {
   width: 100%;
@@ -438,10 +445,59 @@ body {
 }
 .maps__info {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-template-columns: 1fr 1.4fr 0.6fr;
   gap: 50px;
   margin: 100px 0;
 }
+.maps__info p {
+  width: 445px;
+}
 .maps__info h2 {
   color: #495567;
+}
+.maps__info .button {
+  height: fit-content;
+  padding: 15px 45px;
+}
+.maps .forme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #495567;
+  position: absolute;
+  width: fit-content;
+}
+.maps .forme .rectangle {
+  background-color: #fcb62b;
+  padding: 27px 53px;
+  text-align: center;
+}
+.maps .forme .triangle {
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid #fcb62b;
+  margin: 0 auto;
+}
+
+.london {
+  top: 7px;
+  left: 392px;
+}
+
+.newyork {
+  top: 61px;
+  left: 129px;
+}
+
+.yokohama {
+  top: 67.6px;
+  right: 50.2px;
+}
+
+.jakarta {
+  bottom: 207px;
+  right: 134px;
 }/*# sourceMappingURL=style.css.map */
