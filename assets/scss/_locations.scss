@@ -53,6 +53,7 @@
     &__info{
         display: grid;
         justify-items: center;
+        align-items: center;
         grid-template-columns: 1fr 1.4fr 0.6fr;
         gap: 50px;
         margin: 100px 0;
@@ -65,10 +66,10 @@
             color: variable.$color-dark-navy
         }
 
-        .button{
-            height: fit-content;
-            padding: 15px 45px;
+        a:hover, a:focus {
+            line-height: 43px;
         }
+
     }
 
     .forme{
