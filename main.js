@@ -5,7 +5,7 @@ let lastScrollTop = 0;
  
       if (currentScroll > lastScrollTop) { 
         // Scrolling down 
-        document.querySelector('header').style.top = '-100px'; 
+        document.querySelector('header').style.top = '-150px'; 
       } else { 
         // Scrolling up 
         document.querySelector('header').style.top = '0'; 
