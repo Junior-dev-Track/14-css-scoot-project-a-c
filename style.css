@@ -506,8 +506,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 730px;
   grid-template-rows: auto auto;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   row-gap: 64px;
 }
 .FAQs .FAQs-container .FAQs-child {
