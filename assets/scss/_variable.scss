@@ -68,13 +68,10 @@ a{
     font-family: $family-space;
     font-size: 15px;
     font-weight: 700;
-    line-height: 25px;
-    transition-property: ease-in-out 0.2s color,;
 }
 
 a:hover, a:focus {
     color: $color-yellow !important;
-    transition: ease-in-out 0.2s color,;
 }
 
 
@@ -85,7 +82,7 @@ a:hover, a:focus {
     height: 53px;
     display: block;
     text-align: center;
-    line-height: 50px;
+    line-height: 55px;
     transition: ease-in-out 0.4s color, background-color, border;
 }
 
@@ -93,8 +90,9 @@ a:hover, a:focus {
     background-color: $color-white;
     transition: ease-in-out 0.4s color, background-color, border;
     border: $color-yellow solid 3px;
-    height: 47px;
-    width: 177px;
+    height: 48px;
+    width: 178px;
+    line-height: 48px;
 }
 
 .container {
