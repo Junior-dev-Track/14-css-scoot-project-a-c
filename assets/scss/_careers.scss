@@ -56,6 +56,12 @@
 
     .flex_join{
         display: flex;
+        column-gap: 30px;
+
+        .elem_join {
+            width: 350px;
+            height: 512px;
+        }
 
         .para--last{
             margin-top: 20px;

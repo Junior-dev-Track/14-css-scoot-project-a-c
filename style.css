@@ -400,11 +400,23 @@ body {
   overflow-x: hidden;
 }
 
+.pic-sec-about {
+  background-image: url("./assets/images/carrefour.png");
+  background-position-y: 43%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  align-items: center;
+  z-index: 1;
+}
+
 .second-section-container {
   grid-template-rows: 1fr 1fr;
   margin: 120px 0;
 }
-.second-section-container .second-section-child:nth-child(2)::after {
+.second-section-container .arrow-up-left::after {
   content: "";
   width: 1100px;
   height: 150px;
@@ -514,7 +526,6 @@ body {
   color: #495567;
 }
 .maps__info .button {
-  height: -moz-fit-content;
   height: fit-content;
   padding: 15px 45px;
 }
@@ -524,7 +535,6 @@ body {
   align-items: center;
   color: #495567;
   position: absolute;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .maps .forme .rectangle {
@@ -611,6 +621,11 @@ body {
 }
 .join .flex_join {
   display: flex;
+  column-gap: 30px;
+}
+.join .flex_join .elem_join {
+  width: 350px;
+  height: 512px;
 }
 .join .flex_join .para--last {
   margin-top: 20px;
