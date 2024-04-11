@@ -537,6 +537,7 @@ body {
 .maps__info h2 {
   color: #495567;
 }
+
 .maps__info a:hover, .maps__info a:focus {
   line-height: 43px;
 }
@@ -657,4 +658,5 @@ body {
   justify-content: space-between;
   padding: 38px;
   gap: 24px;
+
 }/*# sourceMappingURL=style.css.map */
