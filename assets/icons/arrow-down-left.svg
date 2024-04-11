@@ -1,4 +1,8 @@
-<svg width="1022" height="151" viewBox="0 0 1022 151" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1021.5 8H182.641V107.369H6.37775" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel"/>
-<path d="M44.4263 145.639L6 107.213L44.4263 68.7869" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel"/>
+<svg width="1224" height="151" viewBox="0 0 1224 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 32">
+<path id="Path 4" d="M1224 8H182.641V107.369H6.37817" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel"/>
+<g id="Group 13">
+<path id="Path 3" d="M44.4263 145.639L6 107.213L44.4263 68.7869" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel"/>
+</g>
+</g>
 </svg>
