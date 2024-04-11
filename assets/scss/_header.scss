@@ -7,6 +7,12 @@ header {
     width: 100%;
     height: 96px;
     align-items: center;
+    background-color: variable.$color-white;
+
+    //position: fixed; 
+    // top: -96px; /* Set the initial position off-screen */ 
+    // transition: top 0.3s; /* Add a smooth transition for the header movement */ 
+    z-index: 2;
 
     .header-left {
         display: flex;
