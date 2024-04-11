@@ -27,6 +27,16 @@
             p {
                 color: variable.$color-white;
                 margin-bottom: 40px;
+                &::after {
+                    content: '';
+                    width: 2000px;
+                    height: 15px;
+                    background: url('./assets/icons/line-color.svg');
+                    background-size: cover;
+                    position: absolute; 
+                    top: 49px;
+                    right: 460px;
+                }
             }
             &::after {
                 content: '';
@@ -47,15 +57,6 @@
             right: 0;
             top: 423px;
         }
-    }
-    &::after {
-        content: '';
-        width: 203px;
-        height: 15px;
-        background: url('./assets/icons/line-color.svg');
-        background-size: cover;
-        position: absolute; 
-        top: 348px;
     }
     &::before {
         content: '';
@@ -134,16 +135,16 @@
         }
         &:nth-child(3)::after {
             content: '';
-            width: 750px;
+            width: 3000px;
             height: 150px;
             background: url('./assets/icons/arrow-down-right.svg')  no-repeat;
             position: absolute;
             top: 0px;
-            left: -550px;
+            right: -470px;
         }
         &:nth-child(6)::after {
             content: '';
-            width: 735px;
+            width: 2000px;
             height: 150px;
             background: url('./assets/icons/arrow-down-left.svg')  no-repeat;
             position: absolute;
@@ -154,7 +155,7 @@
 
     .arrow-down-left::after {
         content: '';
-        width: 1000px;
+        width: 2300px;
         height: 150px;
         background: url('./assets/icons/arrow-down-left.svg')  no-repeat;
         position: absolute;

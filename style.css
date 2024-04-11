@@ -270,6 +270,16 @@ footer .footer-down .container .footer-down-right img {
   color: #FFFFFF;
   margin-bottom: 40px;
 }
+.intro .container .content-p p::after {
+  content: "";
+  width: 2000px;
+  height: 15px;
+  background: url("./assets/icons/line-color.svg");
+  background-size: cover;
+  position: absolute;
+  top: 49px;
+  right: 460px;
+}
 .intro .container .content-p::after {
   content: "";
   width: 1000px;
@@ -287,15 +297,6 @@ footer .footer-down .container .footer-down-right img {
   position: absolute;
   right: 0;
   top: 423px;
-}
-.intro::after {
-  content: "";
-  width: 203px;
-  height: 15px;
-  background: url("./assets/icons/line-color.svg");
-  background-size: cover;
-  position: absolute;
-  top: 348px;
 }
 .intro::before {
   content: "";
@@ -371,16 +372,16 @@ footer .footer-down .container .footer-down-right img {
 }
 .second-section-container .second-section-child:nth-child(3)::after {
   content: "";
-  width: 750px;
+  width: 3000px;
   height: 150px;
   background: url("./assets/icons/arrow-down-right.svg") no-repeat;
   position: absolute;
   top: 0px;
-  left: -550px;
+  right: -470px;
 }
 .second-section-container .second-section-child:nth-child(6)::after {
   content: "";
-  width: 735px;
+  width: 2000px;
   height: 150px;
   background: url("./assets/icons/arrow-down-left.svg") no-repeat;
   position: absolute;
@@ -389,7 +390,7 @@ footer .footer-down .container .footer-down-right img {
 }
 .second-section-container .arrow-down-left::after {
   content: "";
-  width: 1000px;
+  width: 2300px;
   height: 150px;
   background: url("./assets/icons/arrow-down-left.svg") no-repeat;
   position: absolute;
@@ -422,7 +423,7 @@ body {
   overflow-x: hidden;
 }
 
-.pic-sec-about {
+.picture__section__about {
   background-image: url("./assets/images/carrefour.png");
   background-position-y: 43%;
   height: 200px;
@@ -433,6 +434,30 @@ body {
   align-items: center;
   z-index: 1;
 }
+.picture__section__about .container__intro {
+  display: grid;
+  grid-template-columns: 1.7fr 0.3fr;
+  margin: auto;
+  width: 1106px;
+}
+.picture__section__about .container__intro h1 {
+  color: #FFFFFF;
+}
+.picture__section__about .container__intro img {
+  position: absolute;
+  right: 0;
+}
+.picture__section__about::before {
+  content: "";
+  background-color: #2F3B59;
+  opacity: 75%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  z-index: -1;
+}
 
 .second-section-container {
   grid-template-rows: 1fr 1fr;
@@ -440,7 +465,7 @@ body {
 }
 .second-section-container .arrow-up-left::after {
   content: "";
-  width: 1100px;
+  width: 2000px;
   height: 150px;
   background: url("./assets/icons/arrow-up-left.svg") no-repeat;
   position: absolute;
@@ -462,8 +487,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 730px;
   grid-template-rows: auto auto;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   row-gap: 64px;
 }
 .FAQs .FAQs-container .FAQs-child {
@@ -551,7 +575,6 @@ body {
 }
 .maps__info a:hover, .maps__info a:focus {
   line-height: 43px;
-
 }
 .maps .forme {
   display: flex;
