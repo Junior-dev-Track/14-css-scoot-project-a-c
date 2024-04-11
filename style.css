@@ -606,8 +606,12 @@ body {
 }
 .maps .forme .rectangle {
   background-color: #fcb62b;
-  padding: 27px 53px;
   text-align: center;
+  width: 189px;
+  height: 72px;
+}
+.maps .forme .rectangle h4 {
+  line-height: 72px;
 }
 .maps .forme .triangle {
   width: 0;
@@ -717,6 +721,46 @@ body {
 @media screen and (max-width: 768px) {
   .container {
     max-width: 768px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .picture__section {
+    background-position-y: 95%;
+    background-position-x: 55%;
+    background-size: 256%;
+  }
+  .maps__info p {
+    max-width: 573px;
+    text-align: center;
+  }
+  .picture__section .container__intro h1 {
+    color: #FFFFFF;
+    margin-left: 100px;
+  }
+  .maps__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .maps__info h2 {
+    max-width: 457px;
+    text-align: center;
+  }
+  .forme .rectangle {
+    width: 120px;
+    height: 32px;
+  }
+  .forme .rectangle h4 {
+    width: 45px;
+    height: 28px;
+    text-align: center;
+    line-height: 72px;
+  }
+  .picture__section .container__intro {
+    display: grid;
+    grid-template-columns: 1.7fr 0.3fr;
+    margin: auto;
+    width: 768px;
   }
 }
 @media screen and (max-width: 768px) {
