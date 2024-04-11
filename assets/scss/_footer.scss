@@ -22,6 +22,11 @@ footer {
             .footer-up-right {
                 justify-self: right;
                 gap: 18px;
+                // TODO : why it doesn't work ?
+                .link-download {
+                    display: inline-block; /* Ensures the link takes the size of its content */
+                    height: 56px;
+                }
             }
         }
         .container::after {
