@@ -46,8 +46,7 @@
     margin: 100px 0;
     position: relative;
     img{
-        width: 100%;
-        height: auto;
+        max-width: 100%;
     }
 
     &__info{
@@ -67,7 +66,7 @@
         }
 
         a:hover, a:focus {
-            line-height: 43px;
+            line-height: 50px;
         }
 
     }
@@ -75,10 +74,7 @@
     .forme{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        color: variable.$color-dark-navy;
         position: absolute;
-        width: fit-content;
 
         .rectangle {
             background-color: variable.$color-yellow;
@@ -100,8 +96,8 @@
 }
 
 .london {
-    top: 7px;
-    left: 392px;
+    top: 1%;
+    left: 35.8%;
 }
 
 .newyork{

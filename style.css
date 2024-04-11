@@ -103,13 +103,10 @@ a {
   font-family: "Space Mono", monospace;
   font-size: 15px;
   font-weight: 700;
-  line-height: 25px;
-  transition-property: ease-in-out 0.2s color;
 }
 
 a:hover, a:focus {
   color: #fcb62b !important;
-  transition: ease-in-out 0.2s color;
 }
 
 .button {
@@ -119,7 +116,7 @@ a:hover, a:focus {
   height: 53px;
   display: block;
   text-align: center;
-  line-height: 50px;
+  line-height: 55px;
   transition: ease-in-out 0.4s color, background-color, border;
 }
 
@@ -127,8 +124,9 @@ a:hover, a:focus {
   background-color: #FFFFFF;
   transition: ease-in-out 0.4s color, background-color, border;
   border: #fcb62b solid 3px;
-  height: 47px;
-  width: 177px;
+  height: 48px;
+  width: 178px;
+  line-height: 48px;
 }
 
 .container {
@@ -290,6 +288,13 @@ footer .footer-down .container .footer-down-right img {
   position: absolute;
   top: 50px;
   left: 540px;
+}
+.intro .container .content-p a:hover a:focus {
+  color: #FFFFFF !important;
+  background-color: transparent !important;
+  width: 178.2px;
+  height: 48.2px;
+  line-height: 51px;
 }
 .intro .container::after {
   content: "";
@@ -558,8 +563,7 @@ body {
   position: relative;
 }
 .maps img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
 }
 .maps__info {
   display: grid;
@@ -576,15 +580,12 @@ body {
   color: #495567;
 }
 .maps__info a:hover, .maps__info a:focus {
-  line-height: 43px;
+  line-height: 50px;
 }
 .maps .forme {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: #495567;
   position: absolute;
-  width: fit-content;
 }
 .maps .forme .rectangle {
   background-color: #fcb62b;
@@ -601,8 +602,8 @@ body {
 }
 
 .london {
-  top: 7px;
-  left: 392px;
+  top: 1%;
+  left: 35.8%;
 }
 
 .newyork {
@@ -631,7 +632,6 @@ body {
 }
 
 .join {
-  position: relative;
   text-align: center;
 }
 .join h2 {
@@ -649,16 +649,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 171px;
-}
-.join .para__1 {
-  left: 145px;
-}
-.join .para__2 {
-  left: 515px;
-}
-.join .para__3 {
-  left: 875px;
+  bottom: 42%;
 }
 .join .para p {
   font-family: "Space Mono", monospace;
@@ -670,11 +661,16 @@ body {
 }
 .join .flex_join {
   display: flex;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .join .flex_join .elem_join {
   width: 350px;
+  display: flex;
   height: 512px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 .join .flex_join .para--last {
   margin-top: 20px;
