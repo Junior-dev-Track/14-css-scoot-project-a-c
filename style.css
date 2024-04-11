@@ -198,15 +198,8 @@ footer .footer-up .container .footer-up-right {
   gap: 18px;
 }
 footer .footer-up .container .footer-up-right .link-download {
-  display: inline-block;
+  display: inline-block; /* Ensures the link takes the size of its content */
   height: 56px;
-  position: relative;
-  z-index: 2;
-}
-footer .footer-up .container .footer-up-right .link-download img {
-  width: 100%;
-  height: auto;
-  z-index: -1;
 }
 footer .footer-up .container::after {
   content: "";
@@ -532,7 +525,6 @@ body {
 }
 .FAQs .FAQs-container .FAQs-child .FAQs-question:hover {
   background-color: #FFF4DF;
-  cursor: pointer;
 }
 .FAQs .FAQs-container .FAQs-child .FAQs-question .FAQs-title-arrow {
   display: flex;
@@ -542,8 +534,9 @@ body {
 .FAQs .FAQs-container .FAQs-child .FAQs-question p {
   margin-top: 24px;
   display: none;
+  display: none;
 }
-.FAQs .FAQs-container .FAQs-child h4 {
+.FAQs .FAQs-container .FAQs-child .FAQs-question h4 {
   position: relative;
 }
 
@@ -691,8 +684,7 @@ body {
 }
 .join .flex_join {
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 .join .flex_join .elem_join {
   width: 350px;
