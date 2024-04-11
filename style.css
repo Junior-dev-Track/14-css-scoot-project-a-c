@@ -519,6 +519,9 @@ body {
   background-color: #F2F5F9;
   padding: 32px 40px;
 }
+.FAQs .FAQs-container .FAQs-child .FAQs-question:hover {
+  background-color: #FFF4DF;
+}
 .FAQs .FAQs-container .FAQs-child .FAQs-question p {
   margin-top: 24px;
 }

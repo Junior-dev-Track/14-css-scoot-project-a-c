@@ -78,6 +78,10 @@
             .FAQs-question {
                 background-color: variable.$color-snow;
                 padding: 32px 40px;
+
+                &:hover{
+                    background-color: variable.$color-light-yellow;
+                }
                 p {
                     margin-top: 24px;
                 }
