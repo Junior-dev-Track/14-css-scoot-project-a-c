@@ -99,14 +99,36 @@ p {
   color: #939CAA;
 }
 
+a {
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  transition-property: ease-in-out 0.2s color;
+}
+
+a:hover, a:focus {
+  color: #fcb62b !important;
+  transition: ease-in-out 0.2s color;
+}
+
 .button {
   color: #FFFFFF;
   background-color: #fcb62b;
-  font-family: "Space Mono", monospace;
-  font-size: 15px;
-  line-height: 25px;
-  font-weight: 700;
-  padding: 14px 39px;
+  width: 183px;
+  height: 53px;
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  transition: ease-in-out 0.4s color, background-color, border;
+}
+
+.button:hover, .button:focus {
+  background-color: #FFFFFF;
+  transition: ease-in-out 0.4s color, background-color, border;
+  border: #fcb62b solid 3px;
+  height: 47px;
+  width: 177px;
 }
 
 .container {
@@ -440,7 +462,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 730px;
   grid-template-rows: auto auto;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   row-gap: 64px;
 }
 .FAQs .FAQs-container .FAQs-child {
@@ -515,6 +538,7 @@ body {
 .maps__info {
   display: grid;
   justify-items: center;
+  align-items: center;
   grid-template-columns: 1fr 1.4fr 0.6fr;
   gap: 50px;
   margin: 100px 0;
@@ -525,9 +549,10 @@ body {
 .maps__info h2 {
   color: #495567;
 }
-.maps__info .button {
-  height: fit-content;
-  padding: 15px 45px;
+
+.maps__info a:hover, .maps__info a:focus {
+  line-height: 43px;
+
 }
 .maps .forme {
   display: flex;
@@ -650,7 +675,5 @@ body {
   justify-content: space-between;
   padding: 38px;
   gap: 24px;
-}
-.grid__apply .button {
-  padding: 14px 66px;
+
 }/*# sourceMappingURL=style.css.map */
