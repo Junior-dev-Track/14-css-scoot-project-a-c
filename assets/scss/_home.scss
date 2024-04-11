@@ -2,7 +2,7 @@
 
 .intro {
     height: 650px;
-    margin-bottom: 160px;
+    margin: 96px 0 160px 0;
     background-image: url('./assets/images/home/header-moto.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,12 +82,12 @@
 .first-section {
     &::before {
         content: '';
-        width: 1000px;
+        width: 2000px;
         height: 15px;
         background: url('./assets/icons/line-grey.svg');
         position: relative; 
         top: 56px;
-        right: 200px;
+        right: 1200px;
         z-index: -1;
     }
     .first-section-container {
