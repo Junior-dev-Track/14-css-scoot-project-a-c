@@ -37,6 +37,14 @@
                 top: 50px;
                 left: 540px;
             }
+
+            a:hover a:focus{
+                color: variable.$color-white !important; 
+                background-color: transparent !important;
+                width: 178.2px;
+                height: 48.2px;
+                line-height: 51px;
+            }
         }
         &::after {
             content: '';
