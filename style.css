@@ -197,6 +197,17 @@ footer .footer-up .container .footer-up-right {
   justify-self: right;
   gap: 18px;
 }
+footer .footer-up .container .footer-up-right .link-download {
+  display: inline-block;
+  height: 56px;
+  position: relative;
+  z-index: 2;
+}
+footer .footer-up .container .footer-up-right .link-download img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
 footer .footer-up .container::after {
   content: "";
   width: 1200px;
@@ -521,21 +532,19 @@ body {
 }
 .FAQs .FAQs-container .FAQs-child .FAQs-question:hover {
   background-color: #FFF4DF;
+  cursor: pointer;
+}
+.FAQs .FAQs-container .FAQs-child .FAQs-question .FAQs-title-arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .FAQs .FAQs-container .FAQs-child .FAQs-question p {
   margin-top: 24px;
+  display: none;
 }
-.FAQs .FAQs-container .FAQs-child .FAQs-question h4 {
+.FAQs .FAQs-container .FAQs-child h4 {
   position: relative;
-}
-.FAQs .FAQs-container .FAQs-child .FAQs-question h4::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: url("./assets/icons/faq-closed.svg") no-repeat;
-  position: absolute;
-  top: 10px;
-  right: 0px;
 }
 
 .picture__section {
@@ -682,8 +691,7 @@ body {
 }
 .join .flex_join {
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 .join .flex_join .elem_join {
   width: 350px;
