@@ -1,2 +1,33 @@
 @use './res-variable.scss';
 
+@media screen and (max-width: 768px) {
+
+    .picture__section__about .container__intro h1 {
+        margin-left: 100px;
+    }
+
+    .second-section-container .second-section-child {
+       display: flex;
+    }
+
+    .second-section-container .second-section-child:nth-child(3) {
+        order: 1;
+    }
+
+    .second-section-container .second-section-child:nth-child(4) {
+        order: 0;
+    }
+
+    .second-section-container .second-section-child:nth-child(2) {
+        order: 2;
+    }
+    
+    .second-section-container .second-section-child:nth-child(1) {
+        order: 2;
+    }
+
+
+
+
+
+}
