@@ -21,7 +21,8 @@ footer {
     
             .footer-up-right {
                 justify-self: right;
-                gap: 18px;
+                display: flex;
+                column-gap: 18px;
                 .link-download {
                     display: inline-block;
                     height: 56px;
