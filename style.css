@@ -521,8 +521,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 730px;
   grid-template-rows: auto auto;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   row-gap: 64px;
 }
 .FAQs .FAQs-container .FAQs-child {
@@ -695,8 +694,7 @@ body {
 }
 .join .flex_join {
   display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 .join .flex_join .elem_join {
   width: 350px;
@@ -908,6 +906,7 @@ body {
   }
   h2 {
     font-size: 32px;
+    line-height: 32px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1029,8 +1028,8 @@ body {
     justify-content: flex-start;
     gap: 98px;
   }
-  nav, .header-right {
-    display: none;
+  .nav-header, .header-right {
+    display: none !important;
   }
   img {
     width: 78px;
@@ -1047,15 +1046,18 @@ body {
     width: 375px;
   }
   footer .footer-up {
-    height: 300px;
+    height: 320px;
   }
   footer .footer-up .container {
-    width: 312px;
+    width: 311px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    row-gap: 46px;
-    margin: 46px auto;
-    height: 200px;
+    row-gap: 40px;
+    margin: 88px auto;
+    height: 144px;
+  }
+  footer .footer-up .container .footer-up-left h2 {
+    width: 100%;
   }
   footer .footer-up .container .footer-up-left {
     justify-self: center;
@@ -1064,8 +1066,35 @@ body {
   footer .footer-up .container .footer-up-right {
     justify-self: center;
   }
+  img {
+    width: 113.57px;
+    height: 40px;
+  }
   footer .footer-up .container::after {
     top: 110px;
-    left: -250px;
+    left: -640px;
+  }
+  footer .footer-down {
+    width: 375px;
+    height: 438px;
+  }
+  footer .footer-down .container {
+    width: 286px;
+    height: 120px;
+    flex-direction: column;
+    margin: 64px auto 88px auto;
+  }
+  footer .footer-down .container .footer-down-left {
+    flex-direction: column;
+    gap: 41px;
+    margin-bottom: 85px;
+  }
+  footer .footer-down .container .footer-down-left nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 23px;
+  }
+  nav, .header-right {
+    display: block;
   }
 }/*# sourceMappingURL=style.css.map */
