@@ -1,6 +1,7 @@
-@use './res-variable.scss';
+@use './res-variable-mobile.scss';
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
+
     
     .picture__section{
         background-position-y: 95%;

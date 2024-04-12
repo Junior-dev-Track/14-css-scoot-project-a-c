@@ -1,11 +1,27 @@
-@use './res-variable.scss';
+@use './res-variable-mobile.scss';
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 375px) {
     header {
-        width: 768px;
-        .container {
-            width: 689px;
-            margin: 0 39px; 
-        }
+        width: 375px;
+        // position: fixed;
+    }
+    header .container {
+        width: 312px;
+        margin: 0 39px; 
+        justify-content: flex-start;
+        gap: 98px;
+    }
+    nav, .header-right {
+        display: none;
+    }
+    img {
+        width: 78px;
+        height: 20px;
+    }
+    header .header-left .nav__hamburger {
+        display: block;
+        width: 20px;
+        height: 16px;
+
     }
 }
