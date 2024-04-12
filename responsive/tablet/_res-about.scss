@@ -2,6 +2,10 @@
 
 @media screen and (max-width: 768px) {
 
+    body{
+        overflow-x: hidden;
+    }
+
     .picture__section__about .container__intro h1 {
         margin-left: 100px;
     }
@@ -26,7 +30,18 @@
         order: 2;
     }
 
+    .FAQs .FAQs-container {
+        grid-template-columns: auto;
+    }
 
+    .FAQs .FAQs-container .FAQs-child h3 {
+        text-align: center;
+    }
+
+
+    .second-section-container .arrow-up-left::after {
+        left: -75px;
+    }
 
 
 
