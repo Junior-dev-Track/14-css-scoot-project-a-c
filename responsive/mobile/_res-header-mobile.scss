@@ -2,7 +2,6 @@
 
 @media screen and (max-width: 375px) {
     header {
-        width: 375px;
         height: 64px;
     }
     header .container {
@@ -10,7 +9,6 @@
         height: inherit;
         margin: 0 39px; 
         justify-content: flex-start;
-        // gap: 98px;
     }
     .nav-header, .header-right {
         display: none !important;

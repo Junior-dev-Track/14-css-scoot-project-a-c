@@ -1,9 +1,9 @@
 @use './res-variable.scss';
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
-    footer {
-        width: 768px;
-    }
+    // footer {
+        // width: 768px;
+    // }
     footer .footer-up {
         height: 300px;
     }
@@ -24,9 +24,9 @@
     }
 
     footer .footer-down {
-        width: 768px;
+        // width: 768px;
         .container {
-            width: 689px;
+            max-width: 689px;
         }
     }
     footer .footer-up .container::after {
