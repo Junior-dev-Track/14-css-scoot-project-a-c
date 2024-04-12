@@ -1,0 +1,99 @@
+@use './res-variable.scss';
+
+@media screen and (max-width: 768px) {
+    
+    .picture__section{
+        background-position-y: 95%;
+        background-position-x: 55%;
+        background-size: 256%;
+    }
+
+    .maps__info p {
+        max-width: 573px;
+        text-align: center;
+    }
+
+
+    .picture__section .container__intro h1 {
+        color: #FFFFFF;
+        margin-left: 100px;
+    }
+
+
+    .maps__info {
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            max-width: 457px;
+            text-align: center;
+        }
+    }
+
+    .maps .forme .rectangle {
+        background-color: #fcb62b;
+        text-align: center;
+        width: 120px;
+        height: 32px;
+    }
+
+    .maps .forme .rectangle h4{
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -0.5803571343421936px;
+    }
+    
+
+    .picture__section .container__intro {
+        display: grid;
+        grid-template-columns: 1.7fr 0.3fr;
+        margin: auto;
+        width: 768px;
+    }
+
+    .maps .forme .triangle {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid #fcb62b;
+    }
+
+
+
+    .london {
+        top: 7%;
+        left: 35.4%;
+    }
+
+    .newyork {
+        top: 15.8%;
+        left: 13.5%;
+    }
+
+    .jakarta {
+        bottom: 38%;
+        right: 12.3%;
+    }
+
+    .yokohama {
+        bottom: 38.4%;
+        right: 12.9%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
