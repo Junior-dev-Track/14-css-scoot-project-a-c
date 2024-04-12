@@ -1,14 +1,11 @@
 @use './res-variable-mobile.scss';
 
 @media screen and (max-width: 375px) {
-    footer {
-        width: 375px;
-    }
     footer .footer-up {
         height: 320px;
     }
     footer .footer-up .container {
-        width: 311px;
+        max-width: 311px;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
         row-gap: 40px;
@@ -38,7 +35,6 @@
     }
 
     footer .footer-down {
-        width: 375px;
         height: 438px;
     }
     footer .footer-down .container {

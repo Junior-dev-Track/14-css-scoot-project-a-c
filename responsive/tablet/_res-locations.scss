@@ -1,6 +1,6 @@
 @use './res-variable.scss';
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
     
     .picture__section{
         background-position-y: 95%;
@@ -16,7 +16,7 @@
 
     .picture__section .container__intro h1 {
         color: #FFFFFF;
-        margin-left: 100px;
+        // margin-left: 100px;
     }
 
 
@@ -46,10 +46,11 @@
     
 
     .picture__section .container__intro {
-        display: grid;
-        grid-template-columns: 1.7fr 0.3fr;
-        margin: auto;
-        width: 768px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        width: inherit;
     }
 
     .maps .forme .triangle {

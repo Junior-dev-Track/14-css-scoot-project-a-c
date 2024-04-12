@@ -2,26 +2,32 @@
 
 @media screen and (max-width: 375px) {
     header {
-        width: 375px;
-        // position: fixed;
+        height: 64px;
     }
     header .container {
         width: 312px;
+        height: inherit;
         margin: 0 39px; 
         justify-content: flex-start;
-        gap: 98px;
     }
     .nav-header, .header-right {
         display: none !important;
     }
     img {
-        width: 78px;
+        width: 75px;
         height: 20px;
     }
     header .header-left .nav__hamburger {
         display: block;
         width: 20px;
         height: 16px;
-
+    }
+    header .header-left {
+        gap: 98px;
+    }
+    
+    header .header-left a img {
+        width: 75px;
+        height: auto;
     }
 }
