@@ -196,7 +196,8 @@ footer .footer-up .container .footer-up-left h2 {
 footer .footer-up .container .footer-up-right {
   justify-self: right;
   display: flex;
-  column-gap: 18px;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
 }
 footer .footer-up .container .footer-up-right .link-download {
   display: inline-block;
@@ -542,6 +543,7 @@ body {
 .FAQs .FAQs-container .FAQs-child .FAQs-question p {
   margin-top: 24px;
   display: none;
+  display: none;
 }
 .FAQs .FAQs-container .FAQs-child h4 {
   position: relative;
@@ -842,7 +844,7 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-  header .container {
+  header {
     width: 768px;
   }
   header .container {

@@ -1,0 +1,36 @@
+@use './res-variable.scss';
+
+@media screen and (max-width: 768px) {
+    footer {
+        width: 768px;
+    }
+    footer .footer-up {
+        height: 300px;
+    }
+    footer .footer-up .container {
+        width: 689px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 46px;
+        margin: 46px auto;
+        height: 200px;
+    }
+    footer .footer-up .container .footer-up-left {
+        justify-self: center;
+        text-align: center;
+    }
+    footer .footer-up .container .footer-up-right {
+        justify-self: center;
+    }
+
+    footer .footer-down {
+        width: 768px;
+        .container {
+            width: 689px;
+        }
+    }
+    footer .footer-up .container::after {
+        top: 110px;
+        left: -250px;
+    }
+}
