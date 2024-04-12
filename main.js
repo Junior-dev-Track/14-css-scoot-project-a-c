@@ -16,13 +16,18 @@ window.addEventListener("scroll", function() {
 // FAQs
 document.addEventListener('DOMContentLoaded', function() {
   // Select all SVG elements with the class 'faq-toggle'
-  const toggles = document.querySelectorAll('.faq-toggle');
+  const toggles = document.querySelectorAll('.FAQs-question');
 
   // Add a click event listener to each SVG
   toggles.forEach(function(toggle) {
       toggle.addEventListener('click', function() {
           // Find the closest paragraph to the clicked SVG
-          const paragraph = this.closest('.FAQs-question').querySelector('p');
+          // const paragraph = this.closest('.FAQs-question').querySelector('p');
+          const paragraph = this.querySelector('p');
+
+          if (!paragraph.style.display) {
+            paragraph.style.display = 'none';
+        }
 
           // Toggle the display of the paragraph
           if (paragraph.style.display === 'none') {
