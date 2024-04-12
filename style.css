@@ -199,7 +199,8 @@ footer .footer-up .container .footer-up-left h2 {
 footer .footer-up .container .footer-up-right {
   justify-self: right;
   display: flex;
-  column-gap: 18px;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
 }
 footer .footer-up .container .footer-up-right .link-download {
   display: inline-block;
@@ -732,7 +733,42 @@ body {
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .container {
     max-width: 768px;
-    margin: 0 39px;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container.main-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro .container .content-p p::after {
+    display: none;
+  }
+  .intro .container .content-h1 h1 {
+    width: 573px;
+    text-align: center;
+  }
+  .intro .container .content-p {
+    padding-left: 0;
+    width: 573px;
+    text-align: center;
+    align-items: center;
+  }
+  .intro .container .content-p::after {
+    top: 163px;
+    left: -225px;
+  }
+  .intro .container::after {
+    top: 543px;
+  }
+  .intro .container .content-h1 {
+    width: 573px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
     overflow-x: hidden;
   }
 }
@@ -765,7 +801,13 @@ body {
     text-align: center;
   }
   .second-section-container .arrow-up-left::after {
-    left: -75px;
+    left: -50px;
+  }
+  .second-section-container .circle-img-right::before {
+    left: 600px;
+  }
+  .FAQs {
+    margin: 160px 39px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -847,14 +889,23 @@ body {
     align-items: center;
   }
   .second-section-container .arrow-down-left::after {
-    left: -75px;
-  }
-  .second-section-container .circle-img-right::before {
-    left: 550px;
+    left: -45px;
   }
   .join .flex_join {
     flex-direction: column;
     align-items: center;
+  }
+  .second-section-container .second-section-child h2 {
+    text-align: center;
+  }
+  .second-section-container .second-section-child:nth-child(3)::after {
+    right: -381px;
+  }
+  .second-section-container .second-section-child:nth-child(3)::before {
+    left: -430px;
+  }
+  .join .flex_join .elem_join {
+    width: 460px;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 768px) {

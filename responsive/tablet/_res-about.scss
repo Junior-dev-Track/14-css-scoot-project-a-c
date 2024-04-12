@@ -1,4 +1,4 @@
-@use './res-variable.scss';
+@import './res-variable.scss';
 
 @media screen and (max-width: 768px) {
 
@@ -40,9 +40,16 @@
 
 
     .second-section-container .arrow-up-left::after {
-        left: -75px;
+        left: -50px;
     }
 
 
+    .second-section-container .circle-img-right::before {
+        left: 600px;
+    }
+
+    .FAQs {
+        margin: 160px 39px;
+    }
 
 }
