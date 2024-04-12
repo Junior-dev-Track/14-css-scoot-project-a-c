@@ -199,8 +199,7 @@ footer .footer-up .container .footer-up-left h2 {
 footer .footer-up .container .footer-up-right {
   justify-self: right;
   display: flex;
-  -moz-column-gap: 18px;
-       column-gap: 18px;
+  column-gap: 18px;
 }
 footer .footer-up .container .footer-up-right .link-download {
   display: inline-block;
@@ -634,6 +633,13 @@ body {
   border-top: 16px solid #fcb62b;
   margin: 0 auto;
 }
+.maps .point {
+  display: none;
+}
+
+.list-city {
+  display: none;
+}
 
 .london {
   top: 1%;
@@ -810,7 +816,7 @@ body {
     margin: 160px 39px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 375px) and (max-width: 768px) {
   .picture__section {
     background-position-y: 95%;
     background-position-x: 55%;
@@ -955,6 +961,10 @@ body {
     max-width: 375px;
     margin: 0 39px;
   }
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
   h2 {
     font-size: 32px;
     line-height: 32px;
@@ -982,64 +992,74 @@ body {
 }
 @media screen and (max-width: 375px) {
   .picture__section {
-    background-position-y: 95%;
-    background-position-x: 55%;
-    background-size: 256%;
-  }
-  .maps__info p {
-    max-width: 573px;
-    text-align: center;
-  }
-  .picture__section .container__intro h1 {
-    color: #FFFFFF;
-    margin-left: 100px;
-  }
-  .maps__info {
-    display: flex;
-    flex-direction: column;
-  }
-  .maps__info h2 {
-    max-width: 457px;
-    text-align: center;
-  }
-  .maps .forme .rectangle {
-    background-color: #fcb62b;
-    text-align: center;
-    width: 120px;
-    height: 32px;
-  }
-  .maps .forme .rectangle h4 {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 28px;
-    letter-spacing: -0.5803571343px;
+    height: 160px;
+    background-position-y: 100%;
+    background-position-x: center;
+    background-size: 170%;
+    justify-content: center;
+    margin-top: 64px;
   }
   .picture__section .container__intro {
-    display: grid;
-    grid-template-columns: 1.7fr 0.3fr;
-    margin: auto;
-    width: 768px;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 1fr;
   }
-  .maps .forme .triangle {
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-top: 8px solid #fcb62b;
+  .picture__section .container__intro img {
+    display: none;
+  }
+  .maps {
+    margin: 72px 0 40px 0;
+  }
+  .maps .forme {
+    display: none;
+  }
+  .world-map {
+    width: 100%;
+    height: auto;
+  }
+  .maps__info {
+    height: 306px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    text-align: center;
+    gap: 32px;
+    margin: 72px 0;
+    position: relative;
+  }
+  .list-city {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .list-city-child {
+    background-color: hsla(40, 97%, 58%, 0.15);
+    text-align: center;
+    padding: 22px 0;
+  }
+  .maps .point {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #FCB72B;
+    border-radius: 50%;
+    position: absolute;
   }
   .london {
-    top: 7%;
-    left: 35.4%;
+    top: 15%;
+    left: 40.5%;
   }
   .newyork {
-    top: 15.8%;
-    left: 13.5%;
-  }
-  .jakarta {
-    bottom: 38%;
-    right: 12.3%;
+    top: 18%;
+    left: 22%;
   }
   .yokohama {
-    bottom: 38.4%;
-    right: 12.9%;
+    top: 26%;
+    right: 11%;
+  }
+  .jakarta {
+    top: 55%;
+    right: 18%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1072,24 +1092,32 @@ body {
 @media screen and (max-width: 375px) {
   header {
     width: 375px;
+    height: 64px;
   }
   header .container {
     width: 312px;
+    height: inherit;
     margin: 0 39px;
     justify-content: flex-start;
-    gap: 98px;
   }
   .nav-header, .header-right {
     display: none !important;
   }
   img {
-    width: 78px;
+    width: 75px;
     height: 20px;
   }
   header .header-left .nav__hamburger {
     display: block;
     width: 20px;
     height: 16px;
+  }
+  header .header-left {
+    gap: 98px;
+  }
+  header .header-left a img {
+    width: 75px;
+    height: auto;
   }
 }
 @media screen and (max-width: 375px) {
