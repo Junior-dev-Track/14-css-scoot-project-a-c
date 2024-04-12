@@ -521,7 +521,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 730px;
   grid-template-rows: auto auto;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   row-gap: 64px;
 }
 .FAQs .FAQs-container .FAQs-child {
@@ -694,7 +695,8 @@ body {
 }
 .join .flex_join {
   display: flex;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .join .flex_join .elem_join {
   width: 350px;
@@ -733,9 +735,13 @@ body {
   .container {
     max-width: 768px;
     margin: 0 39px;
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
   .picture__section__about .container__intro h1 {
     margin-left: 100px;
   }
@@ -753,6 +759,15 @@ body {
   }
   .second-section-container .second-section-child:nth-child(1) {
     order: 2;
+  }
+  .FAQs .FAQs-container {
+    grid-template-columns: auto;
+  }
+  .FAQs .FAQs-container .FAQs-child h3 {
+    text-align: center;
+  }
+  .second-section-container .arrow-up-left::after {
+    left: -75px;
   }
 }
 @media screen and (max-width: 768px) {
