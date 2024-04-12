@@ -95,6 +95,15 @@ a:hover, a:focus {
     line-height: 48px;
 }
 
+.intro .container .content-p a:hover, .intro .container .content-p a:focus {
+    background-color: transparent;
+    transition: ease-in-out 0.4s color, background-color, border;
+    border: $color-yellow solid 3px;
+    height: 48px;
+    width: 178px;
+    line-height: 48px;
+}
+
 .container {
     max-width: 1106px;
     display: flex;
