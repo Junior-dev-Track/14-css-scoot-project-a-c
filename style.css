@@ -196,7 +196,8 @@ footer .footer-up .container .footer-up-left h2 {
 footer .footer-up .container .footer-up-right {
   justify-self: right;
   display: flex;
-  column-gap: 18px;
+  -moz-column-gap: 18px;
+       column-gap: 18px;
 }
 footer .footer-up .container .footer-up-right .link-download {
   display: inline-block;
@@ -518,8 +519,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 730px;
   grid-template-rows: auto auto;
-  column-gap: 30px;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
   row-gap: 64px;
 }
 .FAQs .FAQs-container .FAQs-child {
@@ -693,7 +694,8 @@ body {
 }
 .join .flex_join {
   display: flex;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .join .flex_join .elem_join {
   width: 350px;
@@ -814,6 +816,33 @@ body {
   .yokohama {
     bottom: 38.4%;
     right: 12.9%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .second-section-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .second-section-container .second-section-child h1 {
+    text-align: center;
+  }
+  .second-section-container .second-section-child p {
+    text-align: center;
+  }
+  .second-section-container .second-section-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-section-container .arrow-down-left::after {
+    left: -75px;
+  }
+  .second-section-container .circle-img-right::before {
+    left: 550px;
+  }
+  .join .flex_join {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (max-width: 768px) {
