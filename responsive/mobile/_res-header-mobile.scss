@@ -11,8 +11,8 @@
         justify-content: flex-start;
         gap: 98px;
     }
-    nav, .header-right {
-        display: none;
+    .nav-header, .header-right {
+        display: none !important;
     }
     img {
         width: 78px;
