@@ -764,12 +764,11 @@ body {
     display: none;
   }
   .intro .container .content-h1 h1 {
-    width: 573px;
     text-align: center;
   }
   .intro .container .content-p {
     padding-left: 0;
-    width: 573px;
+    width: 100%;
     text-align: center;
     align-items: center;
   }
@@ -1037,6 +1036,14 @@ body {
   h2 {
     font-size: 32px;
     line-height: 32px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .intro .container::after {
+    display: none;
+  }
+  .intro .container .content-h1 {
+    width: 100%;
   }
 }
 @media screen and (max-width: 375px) {
