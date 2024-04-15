@@ -2,12 +2,20 @@
 
 
 @media screen and (max-width: 375px) {
+    .intro .container {
+        padding: 115px 0 179px 0;
+    }
     .intro .container::after {
         display: none;
     }
 
     .intro .container .content-h1 {
         width: 100%;
+    }
+
+    .intro .container .content-p::after {
+        top: 212px;
+        left: -356px;
     }
 
     // .container.main-home {
