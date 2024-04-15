@@ -93,7 +93,7 @@
     .first-section-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
+        column-gap: 30px;
         margin-bottom: 200px;
         .first-section-child {
             display: grid;
