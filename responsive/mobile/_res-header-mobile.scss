@@ -31,6 +31,18 @@
         height: auto;
     }
 
+    input[type=checkbox] + label {
+        .hamburger{
+            display: block !important;
+            width: auto;
+        }
+
+        .x{
+            display: none !important;
+            width: auto;
+        }
+    }
+
     input[type=checkbox]:checked + label{
 
         .back-opa{
@@ -103,7 +115,7 @@
         }
 
         .x{
-            display: block;
+            display: block !important;
             width: 20px !important;
             height: 16px !important;
         }
