@@ -1337,6 +1337,14 @@ body {
     width: 75px;
     height: auto;
   }
+  input[type=checkbox] + label .hamburger {
+    display: block !important;
+    width: auto;
+  }
+  input[type=checkbox] + label .x {
+    display: none !important;
+    width: auto;
+  }
   input[type=checkbox]:checked + label .back-opa {
     background-color: #000000;
     opacity: 74.73%;
@@ -1397,7 +1405,7 @@ body {
     display: none !important;
   }
   input[type=checkbox]:checked + label .x {
-    display: block;
+    display: block !important;
     width: 20px !important;
     height: 16px !important;
   }
@@ -1463,6 +1471,4 @@ body {
   nav, .header-right {
     display: block;
   }
-
-}
-}
+}/*# sourceMappingURL=style.css.map */
