@@ -31,27 +31,93 @@
         height: auto;
     }
 
+    input[type=checkbox]:checked + label{
+
+        .back-opa{
+            background-color: #000000;
+            opacity: 74.73%;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+
+        a{
+            color: res-variable-mobile.$color-white;
+        }
+
+        .mobile{
+            display: block;
+            position: absolute;
+            background-color: #333A44;
+            width: 70vw;
+            height: 100vh;
+            top: 100%;
+            left: 0;
+            z-index: 3;
+        }
+
+        .mobile__container{
+            display: flex;
+            width: inherit;
+            height: calc(100% - 64px);
+            justify-content: space-between;
+            flex-direction: column;
+        }
+
+
+        .mobile-list{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-top: 62px;
+            margin-left: 34px;
+        }
+
+        .mobile-button{
+            padding: 32px;
+        }
+
+        .button-wr{
+            color: res-variable-mobile.$color-white;
+            background-color: res-variable-mobile.$color-yellow;
+            width: auto;
+            height: 53px;
+            display: block;
+            text-align: center;
+            line-height: 55px;
+            transition: ease-in-out 0.4s color, background-color, border;
+        }
+
+        .button-wr:hover, .button-wr:focus {
+            background-color: res-variable-mobile.$color-white;
+            transition: ease-in-out 0.4s color, background-color, border;
+            border: res-variable-mobile.$color-yellow solid 3px;
+            height: 48px;
+            line-height: 48px;
+        }
+
+        .hamburger{
+            display: none !important;
+        }
+
+        .x{
+            display: block;
+            width: 20px !important;
+            height: 16px !important;
+        }
+    }
+
+    .hamburger{
+        display: block !important;
+    }
+
     .x{
         display: none;
-        width: 20px !important;
-        height: 16px !important;
     }
 
     .mobile{
         display: none;
-        position: absolute;
-        background-color: #333A44;
-        width: 70vw;
-        height: 100vh;
-        top: 100%;
-        left: 0;
-    }
-
-    .mobile__container{
-        display: flex;
-        width: inherit;
-        height: calc(100% - 64px);
-        flex-direction: column;
-        justify-content: space-between;
     }
 }

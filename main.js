@@ -7,27 +7,16 @@ window.addEventListener("scroll", function() {
     // Scrolling down
     document.querySelector('header').style.top = '-100vh';
     document.querySelector('.mobile').style.top = '-64px';
+    document.querySelector('.back-opa').style.top = '-64px';
 
   } else { 
     // Scrolling up 
     document.querySelector('header').style.top = '0';
     document.querySelector('.mobile').style.top = '64px';
+    document.querySelector('.back-opa').style.top = '64px';
   } 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling 
 }, false); 
-
-// Hamburger menu (mobile)
-document.querySelector('.hamburger').addEventListener('click', function() {
-  document.querySelector('.mobile').style.display = 'block';
-  document.querySelector('.hamburger').style.display = 'none';
-  document.querySelector('.x').style.display = 'block';
-});
-
-document.querySelector('.x').addEventListener('click', function() {
-  document.querySelector('.hamburger').style.display = 'block';
-  document.querySelector('.mobile').style.display = 'none';
-  document.querySelector('.x').style.display = 'none';
-});
 
 // FAQs
 document.addEventListener('DOMContentLoaded', function() {
