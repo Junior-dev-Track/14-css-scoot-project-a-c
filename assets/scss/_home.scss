@@ -96,14 +96,18 @@
         gap: 30px;
         margin-bottom: 200px;
         .first-section-child {
-            img {
-                width: 96px;
-                height: 96px;
-                margin-bottom: 40px;
-            }
-            p {
-                color: variable.$color-dim-gray;
-                margin-top: 36px;
+            display: grid;
+            grid-template-rows: auto auto;
+            .first-section-element {
+                img {
+                    width: 96px;
+                    height: 96px;
+                    margin-bottom: 40px;
+                }
+                p {
+                    color: variable.$color-dim-gray;
+                    margin-top: 36px;
+                }
             }
         }
     }

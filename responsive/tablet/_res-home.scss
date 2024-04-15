@@ -62,6 +62,15 @@
         margin-bottom: 150px;
     }
 
+    .first-section .first-section-container .first-section-child {
+        grid-template-columns: auto auto;
+        gap: 30px;
+    }
+
+    .first-section .first-section-container .first-section-child .first-section-element p {
+        margin-top: 33px;
+    }
+
 
     .grid1:nth-child(1) {
         order: 6 !important;
