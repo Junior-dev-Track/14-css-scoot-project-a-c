@@ -1,8 +1,18 @@
+$color-light-grey: #E5ECF4;
 
-@media screen and (max-width: 375px) {
+
+@media screen and (max-width: 376px) {
     .container {
         max-width: 375px;
         margin: 0 39px;
+    }
+
+    a{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    color: $color-light-grey;
+
     }
 
     h1 {

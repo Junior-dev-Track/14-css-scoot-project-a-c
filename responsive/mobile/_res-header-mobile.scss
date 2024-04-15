@@ -1,6 +1,6 @@
 @use './res-variable-mobile.scss';
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     header {
         height: 64px;
     }
@@ -29,5 +29,29 @@
     header .header-left a img {
         width: 75px;
         height: auto;
+    }
+
+    .x{
+        display: none;
+        width: 20px !important;
+        height: 16px !important;
+    }
+
+    .mobile{
+        display: none;
+        position: absolute;
+        background-color: #333A44;
+        width: 70vw;
+        height: 100vh;
+        top: 100%;
+        left: 0;
+    }
+
+    .mobile__container{
+        display: flex;
+        width: inherit;
+        height: calc(100% - 64px);
+        flex-direction: column;
+        justify-content: space-between;
     }
 }
