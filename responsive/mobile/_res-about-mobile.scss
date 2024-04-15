@@ -1,8 +1,6 @@
 @use './res-variable-mobile.scss';
 
 @media screen and (max-width: 376px) {
-
-
     .picture__section__about .container__intro img {
         display: none;
     }
@@ -11,32 +9,75 @@
         margin-top: 64px;
     }
 
-    .picture__section__about .container__intro h1 {
-        margin-left: 100px;
+    .second-section-container {
+        margin: 72px 0 120px 0;
     }
 
-    .second-section-container .second-section-child {
-       display: flex;
+    .second-section-container .arrow-up-left::after {
+        left: -16px;
+        top: 124px;
     }
 
-    .second-section-container .second-section-child:nth-child(3) {
-        order: 1;
+    .second-section-container .second-section-child-train:nth-child(3)::after {
+        right: -724px;
     }
 
-    .second-section-container .second-section-child:nth-child(4) {
-        order: 0;
+    .space-section {
+        margin: 0 auto;
     }
 
-    .second-section-container .second-section-child:nth-child(2) {
-        order: 2;
-    }
-    
-    .second-section-container .second-section-child:nth-child(1) {
-        order: 2;
+    .join .flex_join {
+        max-width: 311px;
     }
 
+    .join img {
+        width: inherit;
+        height: auto;
+    }
 
+    .join .flex_join .elem_join {
+        width: inherit;
+    }
 
+    .join h2 {
+        margin-bottom: 64px;
+    }
 
+    .join .h4-join {
+        margin-top: 64px;
+    }
 
+    .join .flex_join .para--last {
+        margin-top: 27px;
+    }
+
+    .join .flex_join .elem_join {
+        height: auto;
+        margin-bottom: 56px;
+    }
+
+    .FAQs {
+        margin: 89px auto 0 auto;
+    }
+
+    .FAQs .FAQs-title {
+        margin-bottom: 40px;
+    }
+
+    .FAQs .FAQs-container {
+        row-gap: 32px;
+    }
+
+    .FAQs-title-arrow img {
+        width: 16px;
+        height: auto;
+    }
+
+    .FAQs .FAQs-container {
+        margin-bottom: 120px;
+    }
+
+    .FAQs .FAQs-container .FAQs-child h3 {
+        margin-top: 8px;
+    }
 }
