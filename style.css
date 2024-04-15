@@ -380,7 +380,6 @@ footer .footer-down .container .footer-down-right img:hover {
   grid-template-columns: 1fr 1fr 1fr;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  column-gap: 30px;
   margin-bottom: 200px;
 }
 .first-section .first-section-container .first-section-child {
@@ -790,8 +789,7 @@ body {
     top: 163px;
     left: -222px;
   }
-  .intro .contain
-  ter {
+  .intro .container::after {
     top: 543px;
   }
   .intro .container .content-h1 {
@@ -832,7 +830,6 @@ body {
     grid-template-rows: auto;
     -moz-column-gap: 30px;
          column-gap: 30px;
-    column-gap: 30px;
   }
   .first-section .first-section-container .first-section-child:nth-child(2) {
     margin: 40px 0;
@@ -1061,7 +1058,6 @@ body {
     line-height: 32px;
   }
 }
-
 @media screen and (max-width: 376px) {
   .intro .container {
     padding: 115px 0 179px 0;
@@ -1072,7 +1068,6 @@ body {
   .intro {
     margin: 64px 0 0 0;
   }
-
   .intro .container .content-h1 {
     width: 100%;
   }
@@ -1235,7 +1230,6 @@ body {
     width: 75px;
     height: auto;
   }
-
   input[type=checkbox]:checked + label .back-opa {
     background-color: #000000;
     opacity: 74.73%;
@@ -1250,20 +1244,13 @@ body {
   }
   input[type=checkbox]:checked + label .mobile {
     display: block;
-
-  .x {
-    display: none;
-    width: 20px !important;
-    height: 16px !important;
-  }
-  .mobile {
-    display: none;
     position: absolute;
     background-color: #333A44;
     width: 70vw;
     height: 100vh;
     top: 100%;
     left: 0;
+    z-index: 3;
   }
   input[type=checkbox]:checked + label .mobile--container {
     display: flex;
@@ -1307,7 +1294,7 @@ body {
     width: 20px !important;
     height: 16px !important;
   }
-  .hamburger {
+  header .hamburger {
     display: block !important;
   }
   .x {
@@ -1315,13 +1302,6 @@ body {
   }
   .mobile {
     display: none;
-  }
-  .mobile__container {
-    display: flex;
-    width: inherit;
-    height: calc(100% - 64px);
-    flex-direction: column;
-    justify-content: space-between;
   }
 }
 @media screen and (max-width: 376px) {
@@ -1376,5 +1356,6 @@ body {
   nav, .header-right {
     display: block;
   }
+
 }
 }
