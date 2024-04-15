@@ -4,7 +4,8 @@ $color-grey-light-bar: #E5ECF4;
 @media screen and (min-width: 375px) and (max-width: 768px) {
     .container {
         max-width: 768px;
-        overflow-x: hidden;
+        // overflow-x: hidden;
+        height: auto;
     }
 
 }

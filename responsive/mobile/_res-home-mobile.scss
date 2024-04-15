@@ -1,20 +1,26 @@
 @use './res-variable-mobile.scss';
 
-
 @media screen and (max-width: 376px) {
+    .intro .container {
+        padding: 115px 0 179px 0;
+    }
+    .intro .container::after {
+        display: none;
+    }
 
+    .intro .container .content-h1 {
+        width: 100%;
+    }
 
-    
+    .intro .container .content-p::after {
+        top: 212px;
+        left: -356px;
+    }
 
+    // .container.main-home {
+    //     width:100%;
+    // }
     .intro{
         margin: 64px 0 0 0;
     }
-
-
-
-
-
-
-
-
 }

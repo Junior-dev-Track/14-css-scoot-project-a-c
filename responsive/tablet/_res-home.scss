@@ -2,7 +2,6 @@
 
 @media screen and (max-width: 768px) {
 
-
     .container.main-home {
         display: flex;
         flex-direction: column;
@@ -14,13 +13,13 @@
     }
 
     .intro .container .content-h1 h1 {
-        width: 573px;
+        // width: 573px;
         text-align: center;
     }
 
     .intro .container .content-p {
         padding-left: 0;
-        width: 573px;
+        width: 100%;
         text-align: center;
         align-items: center;
     }
@@ -45,35 +44,63 @@
 
     .first-section {
         margin: 0px 97px;
+        // position: relative;
     }
 
     .first-section::before {
-        width: 15px;
-        height: 784px;
-        background: res-variable.$color-grey-light-bar;
-        top: 746px;
-        right: 615px;
+        display: none;
+    }
+
+    .first-section-element-relative {
+        position: relative;
+        background-color: white;
+    }
+    .first-section-element-relative::before {
+        content: '';
+        display: block;
         position: absolute;
+        width: 15px;
+        height: 1100px;
+        background: res-variable.$color-grey-light-bar;
+        bottom: 96px;
+        left: 40px;
+        
+        z-index: -1;
     }
 
     .first-section .first-section-container {
         grid-template-columns: 1fr;
         margin-top: 125px;
-        margin-bottom: 150px;
+        margin-bottom: 145px;
     }
 
     .first-section .first-section-container .first-section-child {
         grid-template-columns: auto auto;
-        gap: 30px;
+        grid-template-rows: auto;
+        column-gap: 30px;
     }
+
+    .first-section .first-section-container .first-section-child:nth-child(2) {
+        margin: 40px 0;
+    }
+
 
     .first-section .first-section-container .first-section-child .first-section-element p {
         margin-top: 33px;
     }
 
+    .second-section-container {
+        // display: grid;
+        margin-top: 0;
+        margin-bottom: 104px;
+        // grid-template-columns: auto;
+        // grid-template-rows: repeat(6, auto);
+        row-gap: 64px;
+    }
 
     .grid1:nth-child(1) {
         order: 6 !important;
+        margin-bottom: 56px;
     }
     .grid2:nth-child(2) {
         order: 6 !important;
@@ -84,6 +111,7 @@
     }
     .grid4:nth-child(4) {
         order: 3 !important;
+        margin-bottom: 56px;
     }
 
     .grid5:nth-child(5) {
@@ -93,11 +121,5 @@
     .grid6:nth-child(6) {
         order: 2 !important;
     }
-
-
-
-
-
-
 
 }
