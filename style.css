@@ -1265,7 +1265,7 @@ body {
     top: 100%;
     left: 0;
   }
-  input[type=checkbox]:checked + label .mobile__container {
+  input[type=checkbox]:checked + label .mobile--container {
     display: flex;
     width: inherit;
     height: calc(100% - 64px);
@@ -1376,4 +1376,5 @@ body {
   nav, .header-right {
     display: block;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+}
