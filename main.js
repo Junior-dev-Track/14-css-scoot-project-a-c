@@ -4,26 +4,30 @@ let lastScrollTop = 0;
 window.addEventListener("scroll", function() { 
   let currentScroll = window.scrollY || document.documentElement.scrollTop; 
   if (currentScroll > lastScrollTop) { 
-    // Scrolling down 
-    document.querySelector('header').style.top = '-150px'; 
+    // Scrolling down
+    document.querySelector('header').style.top = '-100vh';
+    document.querySelector('.mobile').style.top = '-64px';
+
   } else { 
     // Scrolling up 
-    document.querySelector('header').style.top = '0'; 
+    document.querySelector('header').style.top = '0';
+    document.querySelector('.mobile').style.top = '64px';
   } 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling 
 }, false); 
 
 // Hamburger menu (mobile)
-// const hamburger = document.querySelector('.nav__hamburger');
-// const navLinks = document.querySelector('.nav__links--mobile');
-// const modal = document.querySelector('.modal');
+document.querySelector('.hamburger').addEventListener('click', function() {
+  document.querySelector('.mobile').style.display = 'block';
+  document.querySelector('.hamburger').style.display = 'none';
+  document.querySelector('.x').style.display = 'block';
+});
 
-// hamburger.addEventListener('click', () => {
-//   hamburger.classList.toggle('nav__hamburger--active');
-//   navLinks.classList.toggle('nav__links--active');
-//   modal.classList.toggle('modal--active');
-// });
-
+document.querySelector('.x').addEventListener('click', function() {
+  document.querySelector('.hamburger').style.display = 'block';
+  document.querySelector('.mobile').style.display = 'none';
+  document.querySelector('.x').style.display = 'none';
+});
 
 // FAQs
 document.addEventListener('DOMContentLoaded', function() {

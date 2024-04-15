@@ -1,7 +1,6 @@
 @use './res-variable-mobile.scss';
 
-
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
     .intro .container {
         padding: 115px 0 179px 0;
     }
@@ -21,4 +20,7 @@
     // .container.main-home {
     //     width:100%;
     // }
+    .intro{
+        margin: 64px 0 0 0;
+    }
 }
