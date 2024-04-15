@@ -1,6 +1,15 @@
 @use './res-variable-mobile.scss';
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
+
+
+    .picture__section__about .container__intro img {
+        display: none;
+    }
+
+    .picture__section__about {
+        margin-top: 64px;
+    }
 
     .picture__section__about .container__intro h1 {
         margin-left: 100px;

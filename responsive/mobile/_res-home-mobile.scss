@@ -1,12 +1,14 @@
 @use './res-variable-mobile.scss';
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 376px) {
 
 
     
 
-
+    .intro{
+        margin: 64px 0 0 0;
+    }
 
 
 

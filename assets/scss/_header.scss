@@ -7,6 +7,11 @@ header {
     z-index: 2;
     width: 100%;
     transition: top 0.3s;
+
+
+    .mobile{
+        display: none;
+    }
     .container {
         display: flex;
         flex-direction: row;
