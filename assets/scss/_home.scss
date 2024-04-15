@@ -1,7 +1,7 @@
 @use './variable.scss';
 
 .intro {
-    height: 650px;
+    height: 100%;
     margin: 96px 0 160px 0;
     background-image: url('./assets/images/home/header-moto.png');
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: inherit;
+        height: 100%;
         z-index: -1;
     }
 }

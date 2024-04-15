@@ -10,7 +10,7 @@
         grid-template-rows: auto auto;
         row-gap: 40px;
         margin: 88px auto;
-        height: 144px;
+        height: auto;
     }
     footer .footer-up .container .footer-up-left h2 {
         width: 100%;
@@ -25,7 +25,7 @@
         justify-self: center;
     }
 
-    img {
+    .link-download img {
         width: 113.57px;
         height: 40px;
     }

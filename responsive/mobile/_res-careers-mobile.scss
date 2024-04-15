@@ -20,10 +20,6 @@
         align-items: center;
     }
 
-    .second-section-container .arrow-down-left::after {
-        left: -75px;
-    }
-
     .second-section-container .circle-img-right::before {
         left: 550px;
     }
@@ -31,6 +27,23 @@
     .join .flex_join {
         flex-direction: column;
         align-items: center;
+    }
+
+    .grid__apply {
+        margin-top: 89px;
+        margin-bottom: 120px;
+    }
+
+    .grid__apply .box {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 16px;
+        padding: 36px 32px 32px 32px;
+    }
+
+    .grid__apply .box .button {
+        width: 100%;
     }
 
 }
