@@ -2,12 +2,26 @@
 
 @media screen and (max-width: 768px) {
 
+    .picture__section__about {
+        margin-bottom: 144px;
+    }
     .picture__section__about .container__intro {
         width: 768px;
     }
 
     .picture__section__about .container__intro h1 {
         margin-left: 100px;
+    }
+    
+
+    .second-section-container {
+        // width: 573px;
+        // margin: auto;
+    }
+
+    .second-section-container-about {
+        margin: auto;
+        max-width: 573px;
     }
 
     .second-section-container .second-section-child {
@@ -49,7 +63,7 @@
     }
 
     .FAQs {
-        margin: 160px 39px;
+        margin: 60px 39px;
     }
 
 }

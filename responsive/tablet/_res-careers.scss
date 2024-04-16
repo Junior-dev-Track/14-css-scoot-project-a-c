@@ -2,9 +2,24 @@
 
 
 @media screen and (max-width: 768px) {
+    .grid__apply .box {
+        gap: 100px;
+    }
+
+    .grid__apply {
+        margin: 0 auto 105px auto;
+    }
+
+    .picture__section {
+        margin-bottom: 144px;
+    }
     .second-section-container {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .second-section-container-careers {
+        margin: auto;
     }
 
     .second-section-container .second-section-child h1 {

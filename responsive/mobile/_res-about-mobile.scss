@@ -34,26 +34,23 @@
         width: inherit;
         height: auto;
     }
-
-    .join .flex_join .elem_join {
-        width: inherit;
-    }
-
+    
     .join h2 {
         margin-bottom: 64px;
     }
-
+    
     .join .h4-join {
         margin-top: 64px;
     }
-
+    
     .join .flex_join .para--last {
         margin-top: 27px;
     }
-
+    
     .join .flex_join .elem_join {
-        height: auto;
-        margin-bottom: 56px;
+        width: inherit;
+        height: 500px;
+        // margin-bottom: 56px;
     }
 
     .FAQs {
